@@ -2,22 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const candidates = [
         { name: "Candidate 1", position: "Manager", employmentType: "Full Time", experience: "Lorem ipsum dolor sit amet consectetur.", contact: "1234567890", link: "applicant1.php" },
         { name: "Candidate 2", position: "Engineer", employmentType: "Part Time", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
-        { name: "Candidate 2", position: "Engineer", employmentType: "Part Time", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
+        { name: "Candidate 3", position: "Engineer", employmentType: "Part Time", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
 
         { name: "Candidate 4", position: "Designer", employmentType: "Part Time", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
 
-        { name: "Candidate 2", position: "Engineer", employmentType: "Intern", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
+        { name: "Candidate 5", position: "Engineer", employmentType: "Intern", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
 
-        { name: "Candidate 2", position: "Engineer", employmentType: "Part Time", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
+        { name: "Candidate 6", position: "Engineer", employmentType: "Part Time", experience: "Dolor sit amet consectetur adipiscing elit.", contact: "9876543210", link: "applicant2.php" },
 
-        // Add more candidate objects here...
+       
     ];
 
     const searchInput = document.getElementById("searchInput");
     const candidateContainer = document.getElementById("candidateContainer");
 
-    // Function to create a candidate card
-    // Function to create a candidate card
+   
 function createCandidateCard(candidate) {
     const card = document.createElement("div");
     card.classList.add("col-lg-6", "col-md-8", "col-sm-10", "mb-4");
@@ -39,7 +38,7 @@ function createCandidateCard(candidate) {
 }
 
 
-    // Function to display all candidates
+    
     function displayCandidates() {
         candidateContainer.innerHTML = "";
         candidates.forEach(candidate => {
@@ -48,13 +47,11 @@ function createCandidateCard(candidate) {
         });
     }
 
-    // Function to filter candidates based on search input
-    // Function to filter candidates based on search input
 function filterCandidates() {
     const searchText = searchInput.value.toLowerCase().trim();
     candidateContainer.innerHTML = "";
     candidates.forEach(candidate => {
-        // Check if any field contains the search text
+        
         if (
             candidate.name.toLowerCase().includes(searchText) ||
             candidate.position.toLowerCase().includes(searchText) ||
@@ -70,12 +67,12 @@ function filterCandidates() {
 }
 
 
-    // Initial display of all candidates
+    
     displayCandidates();
 
-    // Event listener for search button click
+    
     document.getElementById("search-btn").addEventListener("click", filterCandidates);
 
-    // Event listener for search input change
+   
     searchInput.addEventListener("input", filterCandidates);
 });
