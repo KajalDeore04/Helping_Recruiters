@@ -9,10 +9,10 @@ body {
     overflow: hidden;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 100;
-    color: rgba(0, 0, 0, 0.87); /* Changed to black */
+    color: rgba(0, 0, 0, 0.87); 
     margin: 0;
     padding: 0;
-    background: #FFFFFF; /* Changed to white */
+    background: #FFFFFF; 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -20,9 +20,9 @@ body {
     -ms-user-select: none;
     user-select: none;
     display: flex;
-    justify-content: center; /* Center the calendar horizontally */
-    align-items: center; /* Center the calendar vertically */
-    height: 100vh; /* Ensure the body covers the entire viewport height */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 #calendar {
@@ -37,7 +37,7 @@ body {
 .header {
     height: 50px;
     width: 420px;
-    background: rgba(76, 175, 80, 1); /* Changed to green */
+    background: rgba(76, 175, 80, 1);
     text-align: center;
     position:relative;
     z-index: 100;
@@ -75,7 +75,6 @@ body {
 }
 
 .month {
-    /*overflow: hidden;*/
     opacity: 0;
 }
 
@@ -112,7 +111,7 @@ body {
 }
 
 .week {
-    background: #FFFFFF; /* Changed to white */
+    background: #FFFFFF; 
 }
 
 .day {
@@ -122,13 +121,13 @@ body {
     text-align: center;
     vertical-align: top;
     cursor: pointer;
-    background: #FFFFFF; /* Changed to white */
+    background: #FFFFFF; 
     position: relative;
     z-index: 100;
 }
 
 .day.other {
-    color: rgba(0, 0, 0, .3); /* Changed to black */
+    color: rgba(0, 0, 0, .3); 
 }
 
 .day.today {
@@ -139,7 +138,7 @@ body {
     font-size: 9px;
     text-transform: uppercase;
     margin-bottom: 5px;
-    color: rgba(0, 0, 0, .5); /* Changed to black */
+    color: rgba(0, 0, 0, .5);
     letter-spacing: .7px;
 }
 
@@ -177,7 +176,7 @@ body {
     position: relative;
     width: 420px;
     height: 75px;
-    background: rgba(76, 175, 80, 1); /* Changed to green */
+    background: rgba(76, 175, 80, 1);
     margin-top: 5px;
     border-radius: 4px;
 }
@@ -203,7 +202,7 @@ body {
     height: 0px;
     border-style: solid;
     border-width: 0 5px 5px 5px;
-    border-color: transparent transparent rgba(76, 175, 80, 1) transparent; /* Changed to green */
+    border-color: transparent transparent rgba(76, 175, 80, 1) transparent;
     transition: all 0.7s ease;
 }
 
