@@ -17,10 +17,7 @@
     }
   
     Calendar.prototype.draw = function() {
-      //Create Header
       this.drawHeader();
-  
-      //Draw Month
       this.drawMonth();
   
       this.drawLegend();
@@ -29,7 +26,7 @@
     Calendar.prototype.drawHeader = function() {
       var self = this;
       if(!this.header) {
-        //Create the header elements
+        
         this.header = createElement('div', 'header');
         this.header.className = 'header';
   
@@ -41,7 +38,7 @@
         var left = createElement('div', 'left');
         left.addEventListener('click', function() { self.prevMonth(); });
   
-        //Append the Elements
+       
         this.header.appendChild(this.title); 
         this.header.appendChild(right);
         this.header.appendChild(left);
@@ -127,20 +124,15 @@
       var self = this;
       this.getWeek(day);
   
-      //Outer Day
       var outer = createElement('div', this.getDayClass(day));
       outer.addEventListener('click', function() {
         self.openDay(this);
       });
-  
-      //Day Name
+
       var name = createElement('div', 'day-name', day.format('ddd'));
   
-      //Day Number
       var number = createElement('div', 'day-number', day.format('DD'));
   
-  
-      //Events
       var events = createElement('div', 'day-events');
       this.drawEvents(day, events);
   
@@ -183,13 +175,11 @@
   
       var currentOpened = document.querySelector('.details');
   
-      //Check to see if there is an open detais box on the current row
+      
       if(currentOpened && currentOpened.parentNode === el.parentNode) {
         details = currentOpened;
         arrow = document.querySelector('.arrow');
       } else {
-        //Close the open events on differnt week row
-        //currentOpened && currentOpened.parentNode.removeChild(currentOpened);
         if(currentOpened) {
           currentOpened.addEventListener('webkitAnimationEnd', function() {
             currentOpened.parentNode.removeChild(currentOpened);
@@ -206,13 +196,9 @@
           currentOpened.className = 'details out';
         }
   
-        //Create the Details Container
         details = createElement('div', 'details in');
   
-        //Create the arrow
         var arrow = createElement('div', 'arrow');
-  
-        //Create the event wrapper
   
         details.appendChild(arrow);
         el.parentNode.appendChild(details);
@@ -231,7 +217,6 @@
     }
   
     Calendar.prototype.renderEvents = function(events, ele) {
-      //Remove any events in the current details element
       var currentWrapper = ele.querySelector('.events');
       var wrapper = createElement('div', 'events in' + (currentWrapper ? ' new' : ''));
   
