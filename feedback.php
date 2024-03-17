@@ -1,16 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
     $rating = $_POST['rating'];
     $reasons = $_POST['reasons'];
     $privacyPolicy = isset($_POST['privacy-policy']) ? 'Yes' : 'No';
 
-    // Set email content
-    $to = "admin@gmail.com"; // Change this to your email address
+    $to = "admin@gmail.com"; 
     $subject = "Feedback Submission";
     $message = "Rating: $rating\nReasons: $reasons\nPrivacy Policy Accepted: $privacyPolicy";
 
-    // Send email
     if (mail($to, $subject, $message)) {
         echo "Feedback sent successfully. Thank you!";
     } else {
@@ -61,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img src="amazing.svg" alt="Amazing" />
                 <span>Amazing</span>
               </label>
-                    <!-- Other rating options -->
+                    
                 </div>
             </div>
 
