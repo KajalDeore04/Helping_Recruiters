@@ -78,12 +78,11 @@ body {
 }
 
 .btn-container {
-    text-align: center; /* Align button to center */
-}
+    text-align: center; 
 
 .btn {
-    display: inline-block; /* Display button as inline block */
-    width: auto; /* Auto width */
+    display: inline-block; 
+    width: auto; 
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -98,14 +97,14 @@ body {
     background-color: #0056b3;
 }
 
-/* Add this CSS to your existing stylesheet */
+
 
 #candidateContainer.search-highlight {
-    border: 2px solid #007bff; /* Change color as needed */
+    border: 2px solid #007bff; 
   }
   
-  /* Additional styling for the border radius */
+ 
   #candidateContainer.search-highlight {
-    border-radius: 10px; /* Adjust border radius as needed */
+    border-radius: 10px;
   }
   
