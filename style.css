@@ -42,7 +42,6 @@ body, html {
    
   }
   
-  /* Hover effect */
   .hover-btn:hover {
     background-color: #333;
     color: #fff;
