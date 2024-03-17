@@ -1,0 +1,70 @@
+h3.question{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 100;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.left-part, .right-part {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.left-part {
+  background-color: #f0f0f0;
+}
+
+.right-part {
+  background-color: #e0e0e0;
+}
+.hover-btn {
+    background-color: rgba(99, 127, 248, 0.603);
+    border: 2px solid #333;
+    height: 1cm;
+    width: 5cm;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    bottom: 2cm;
+    float: right;
+   
+  }
+  
+  .hover-btn:hover {
+    background-color: #333;
+    color: #fff;
+    
+  }
+
+.editor-container{
+    width: 900px;
+    height: 540px;
+    margin: 20px auto;
+    position: relative;
+    padding-left: 50px;
+}
+
+#editor{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+  

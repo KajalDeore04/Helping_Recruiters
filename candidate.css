@@ -1,0 +1,111 @@
+.btn{
+    background-color: #45a049;
+}
+
+.cute-search-bar {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cute-search-bar .form-control {
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+    padding-left: 20px;
+}
+
+.cute-search-bar .btn {
+    border: none;
+    border-radius: 20px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.search-form {
+    display: inline-block;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.candidate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.candidate-card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-name {
+    text-align: center;
+}
+
+.candidate-details {
+    margin-top: 20px;
+}
+
+.btn-container {
+    text-align: center; /* Align button to center */
+}
+
+.btn {
+    display: inline-block; /* Display button as inline block */
+    width: auto; /* Auto width */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Add this CSS to your existing stylesheet */
+
+#candidateContainer.search-highlight {
+    border: 2px solid #007bff; /* Change color as needed */
+  }
+  
+  /* Additional styling for the border radius */
+  #candidateContainer.search-highlight {
+    border-radius: 10px; /* Adjust border radius as needed */
+  }
+  
