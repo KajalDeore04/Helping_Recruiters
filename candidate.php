@@ -30,7 +30,7 @@
 
             <!-- Candidate Cards -->
             <div class="row justify-content-center mt-5" id="candidateContainer">
-                <!-- Candidate cards will be dynamically added here -->
+            
             </div>
         </div>
     </div>
